@@ -13,7 +13,6 @@ We don't need to modify the app/retrain any ML model to add more people ( subjec
 ### Features
 
 * Asynchronous processing with [Kotlin Coroutines](https://developer.android.com/kotlin/coroutines)
-* Quick labelling of faces with C++ computation (See [`native`](https://github.com/shubham0204/FaceRecognition_With_FaceNet_Android/tree/native) branch)
 * Use of latest Android development practices with configurable camera facing, GPU usage and mask detection.
 
 ---
@@ -25,7 +24,6 @@ In this project, we'll use the FaceNet model on Android and generate embeddings 
   
 ## FaceNet
 
-![Working of the FaceNet model](images/fig_1.png)
 
 So, the aim of the FaceNet model is to generate a 128 dimensional vector of a given face. It takes in an 160 * 160 RGB image and   
 outputs an array with 128 elements. 
@@ -40,10 +38,23 @@ The one which is the closest will form our desired output.
 
 The app's startup is a login page
 
+
+
+
+
+
 ![Class selection](images/Picture5.jpg)
 
 
 The admin then selects a particular class he wants to check into to mark attendance. Each class click corresponds to `get` request to the flask server endpoint.
+
+
+
+
+
+
+
+
 
 ![Intended File Structure](images/firebase1.jpg)
 
@@ -52,13 +63,25 @@ The admin then selects a particular class he wants to check into to mark attenda
 A user/admin need to store the images of a particular group of students belonging to a class in a directory in Firebase storage bucket. The server accesses then accessese the images of a particular class and and then the bitmap information is sent to app.
 The image shows the class hierarchy.
 
+
+
+
+
+
+
 ![Intended File Structure](images/firebase2.jpg)
 
 
 The image refers to the images stored in a particular class. It is recommended to have multiple images of same person in different conditions such as lightning and camera angles. Remember to mark the filename as the student's name or roll number.
 
 
+
+
+
+
+
 ![Worksheet Storage](images/Picture3.jpg)
+
 
 After all the students are marked, upon pressing the `stop` button, the app asks the admin to enter a name to the excel file to store the attendance status of the students. The students whose faces are detected are marked `present` and those not detected otherwise.
 
