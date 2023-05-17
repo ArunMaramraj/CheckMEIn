@@ -2,9 +2,7 @@
 <div align="center">
   <h1>Attendance System based on Facial Recogniton</h1>
 </div>
-
-> **Store images of people who you would like to recognize and the app, using these images, will classify those people. 
-We don't need to modify the app/retrain any ML model to add more people ( subjects ) for classification**  
+ 
 
 =
 =
