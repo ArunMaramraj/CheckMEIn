@@ -7,14 +7,6 @@
 =
 =
  
- 
-### Features
-
-* Asynchronous processing with [Kotlin Coroutines](https://developer.android.com/kotlin/coroutines)
-* Use of latest Android development practices with configurable camera facing, GPU usage and mask detection.
-
----
-
 
 In this project, we use the FaceNet model on Android and generate embeddings ( fixed size vectors ) which hold information of the face.  
   
